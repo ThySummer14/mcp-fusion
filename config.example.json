@@ -1,0 +1,33 @@
+{
+  "panel_models": {
+    "注释": "以下模型全部通过 CodingPlan 的 ARK_API_KEY 调用，一个 key 即可",
+    "可选模型": [
+      "doubao-seed-2.0-pro",
+      "deepseek-v4-pro",
+      "deepseek-v4-flash",
+      "kimi-k2.6",
+      "glm-5.1",
+      "minimax-m3",
+      "gpt-4o (需 OPENAI_API_KEY)",
+      "gemini-2.5-flash (需 GOOGLE_API_KEY)",
+      "claude-sonnet (需 ANTHROPIC_API_KEY)",
+      "claude-opus (需 ANTHROPIC_API_KEY)"
+    ]
+  },
+  "默认面板": ["deepseek-v4-pro", "kimi-k2.6", "glm-5.1"],
+  "默认评审": "claude-sonnet",
+  "mcp配置示例": {
+    "mcpServers": {
+      "fusion": {
+        "command": "node",
+        "args": ["/Users/thysummer/Desktop/some thing/agent/Claude code/mcp-fusion/dist/index.js"],
+        "env": {
+          "ARK_API_KEY": "你的字节方舟key",
+          "ANTHROPIC_API_KEY": "你的Anthropic key（用于judge）",
+          "OPENAI_API_KEY": "可选",
+          "GOOGLE_API_KEY": "可选"
+        }
+      }
+    }
+  }
+}
